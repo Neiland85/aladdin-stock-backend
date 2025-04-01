@@ -8,7 +8,9 @@ export default async function handler(req: Request): Promise<Response> {
     });
   }
 
-  const { data, error } = await supabase.from('products').select('*');
+  const { data, error } = await supabase
+    .from('aladdin-stock-backend-supabase-table-products')
+    .select('*');
 
   if (error) {
     return new Response(JSON.stringify({ error: error.message }), {
@@ -22,4 +24,3 @@ export default async function handler(req: Request): Promise<Response> {
     headers: { 'Content-Type': 'application/json' },
   });
 }
-
