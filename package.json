@@ -1,0 +1,27 @@
+{
+  "name": "aladdin-stock-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Aladdin Stock Bot – Serverless architecture with Supabase & Vercel",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx api",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier . --write",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Neil Muñoz",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "prettier": "^3.5.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
